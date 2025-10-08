@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+🍿 usePopcorn – A React Movie Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A lightweight movie discovery and tracking app built with React and styled using modern CSS.
+You can browse movies (fetched from the OMDb API), view details, and manage a watched list with personal ratings.
 
-## Available Scripts
+🖼️ Preview
+Movie Search Watched Summary
+<img src="https://github.com/adelana107/usePopcorn-preview1.png" width="400"/> <img src="https://github.com/adelana107/usePopcorn-preview2.png" width="400"/>
 
-In the project directory, you can run:
+(Optional – Add screenshots later)
 
-### `npm start`
+🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🎥 Search Movies: Fetches real-time movie data from the OMDb API
+.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+⭐ Rate & Track: Displays average IMDb rating, user rating, and runtime stats.
 
-### `npm test`
+📦 Expandable Boxes: Toggle between the movie list and watched list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+💾 Component-Based Design: Built entirely with reusable React components.
 
-### `npm run build`
+⚙️ Clean Layout: Styled with custom CSS variables and responsive design.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🧩 Components Overview
+Component Description
+App Root component managing movie and watched data states.
+NavBar Displays app logo, search input, and results count.
+Search Interactive search bar for movie lookups.
+Box Collapsible content container for sections.
+MovieList / Movie Displays movie results with posters and release years.
+WatchedSummary Shows total watched movies with averages.
+WatchedMoviesList / WatchedMovie Lists all watched movies with details.
+🧠 Concepts Practiced
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React Hooks: useState
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Fetching data with fetch() and .json()
 
-### `npm run eject`
+Component composition and props
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Conditional rendering
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Array mapping and calculations
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+CSS variables and dark theme design
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+⚙️ Installation & Setup
 
-## Learn More
+Clone this repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone https://github.com/adelana107/usePopcorn.git
+cd usePopcorn
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Install dependencies
 
-### Code Splitting
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Start the development server
 
-### Analyzing the Bundle Size
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Open your browser at http://localhost:3000
 
-### Making a Progressive Web App
+🔑 API Key Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This app uses the OMDb API to fetch movie data.
 
-### Advanced Configuration
+Visit OMDb API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Request a free API key
 
-### Deployment
+Replace the placeholder key in App.js:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+const key = "your_api_key_here";
 
-### `npm run build` fails to minify
+🖌️ Styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All styles are written in index.css using CSS custom properties (variables):
+
+Dark mode theme with primary purple accent
+
+Responsive layout for all screen sizes
+
+Smooth hover transitions for movie items
+
+🧱 Project Structure
+src/
+├── App.js
+├── index.js
+├── index.css
+└── components/
+├── Movie.js
+├── WatchedList.js
+└── Search.js
+
+💡 Future Improvements
+
+Add a movie detail page
+
+Allow saving watched movies in localStorage
+
+Add star rating component for custom ratings
+
+Include loading and error states for better UX
+
+🧑‍💻 Author
+
+Adelana Oluwafunmibi Cornelius
+📍 Lagos, Nigeria
+🌐 GitHub
+| LinkedIn
+(optional)
+
+📜 License
+
+This project is licensed under the MIT License — free to use and modify.
