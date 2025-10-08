@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import "./index.css";
+=======
+import { useState } from "react";
+>>>>>>> f0172afd06df8881e852c06a75284453e911114e
 
 const tempMovieData = [
   {
@@ -48,13 +52,19 @@ const tempWatchedData = [
   },
 ];
 
+<<<<<<< HEAD
 const average = (arr) => arr.reduce((acc, cur) => acc + cur / arr.length, 0);
 
 const key = "b151c0f0";
+=======
+const average = (arr) =>
+  arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
+>>>>>>> f0172afd06df8881e852c06a75284453e911114e
 
 export default function App() {
   const [movies, setMovies] = useState(tempMovieData);
   const [watched, setWatched] = useState(tempWatchedData);
+<<<<<<< HEAD
   const query = "interstellar";
 
   useEffect(function () {
@@ -68,6 +78,8 @@ export default function App() {
     }
     fetchMovies();
   }, []);
+=======
+>>>>>>> f0172afd06df8881e852c06a75284453e911114e
 
   return (
     <>
@@ -109,9 +121,13 @@ function NumResults({ movies }) {
 function Logo() {
   return (
     <div className="logo">
+<<<<<<< HEAD
       <span role="img" aria-label="popcorn">
         🍿
       </span>
+=======
+      <span role="img">🍿</span>
+>>>>>>> f0172afd06df8881e852c06a75284453e911114e
       <h1>usePopcorn</h1>
     </div>
   );
@@ -148,6 +164,31 @@ function Box({ children }) {
   );
 }
 
+<<<<<<< HEAD
+=======
+// function WatchedBox() {
+//   const [watched, setWatched] = useState(tempWatchedData);
+//   const [isOpen2, setIsOpen2] = useState(true);
+
+//   return (
+//     <div className="box">
+//       <button
+//         className="btn-toggle"
+//         onClick={() => setIsOpen2((open) => !open)}
+//       >
+//         {isOpen2 ? "–" : "+"}
+//       </button>
+//       {isOpen2 && (
+//         <>
+//           <WatchedSummary watched={watched} />
+//           <WatchedMoviesList watched={watched} />
+//         </>
+//       )}
+//     </div>
+//   );
+// }
+
+>>>>>>> f0172afd06df8881e852c06a75284453e911114e
 function MovieList({ movies }) {
   return (
     <ul className="list">
@@ -188,6 +229,7 @@ function WatchedSummary({ watched }) {
         </p>
         <p>
           <span>⭐️</span>
+<<<<<<< HEAD
           <span>{avgImdbRating.toFixed(2)}</span>
         </p>
         <p>
@@ -197,6 +239,17 @@ function WatchedSummary({ watched }) {
         <p>
           <span>⏳</span>
           <span>{avgRuntime.toFixed(2)} min</span>
+=======
+          <span>{avgImdbRating}</span>
+        </p>
+        <p>
+          <span>🌟</span>
+          <span>{avgUserRating}</span>
+        </p>
+        <p>
+          <span>⏳</span>
+          <span>{avgRuntime} min</span>
+>>>>>>> f0172afd06df8881e852c06a75284453e911114e
         </p>
       </div>
     </div>
